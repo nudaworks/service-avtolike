@@ -1,0 +1,342 @@
+.s-head
+  height auto
+  position: relative
+  color #fff
+  background: url("../img/chip/chip-outlaw-woman.png") right 50px no-repeat,
+             url("../img/chip/chip-lamb-q40.jpg") left bottom no-repeat #000;
+  overflow hidden
+
+  &__container-1
+    padding 3.25em 0 6em
+
+
+.logo
+  float left
+  width: 23em
+  background url("data:image/png;base64,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") left center no-repeat
+  background-size contain
+  padding .8em 0 .8em 4em
+  font-size .75em // 12px
+  color #c8c8c8
+  text-align center
+
+.contacts
+  float left
+  text-align left
+
+  &__phone
+    background url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAAiCAYAAAA6RwvCAAAACXBIWXMAAAsTAAALEwEAmpwYAAABNmlDQ1BQaG90b3Nob3AgSUNDIHByb2ZpbGUAAHjarY6xSsNQFEDPi6LiUCsEcXB4kygotupgxqQtRRCs1SHJ1qShSmkSXl7VfoSjWwcXd7/AyVFwUPwC/0Bx6uAQIYODCJ7p3MPlcsGo2HWnYZRhEGvVbjrS9Xw5+8QMUwDQCbPUbrUOAOIkjvjB5ysC4HnTrjsN/sZ8mCoNTIDtbpSFICpA/0KnGsQYMIN+qkHcAaY6addAPAClXu4vQCnI/Q0oKdfzQXwAZs/1fDDmADPIfQUwdXSpAWpJOlJnvVMtq5ZlSbubBJE8HmU6GmRyPw4TlSaqo6MukP8HwGK+2G46cq1qWXvr/DOu58vc3o8QgFh6LFpBOFTn3yqMnd/n4sZ4GQ5vYXpStN0ruNmAheuirVahvAX34y/Axk/96FpPYgAAACBjSFJNAAB6JQAAgIMAAPn/AACA6AAAUggAARVYAAA6lwAAF2/XWh+QAAADUElEQVR42szXW4hVVRzH8c8eU5luFGmFURiG+yFfKisKCQe6ETGkRBcqirSHMMGKErtoUxljJUFM9dQVmQqZwIfKbi8RZEQPXSg3dGGUaqqJJEMMxlYPsw6zzp5z5pwZ96H+T2v/9n/t/d3//1r//V9ZCMH/wY5oqBbZPDyAq3Aq9uI1bJWH30q+h0eQjwcimxSRIuvBIE5uMO1HXCQP31cN0lWCWIf3mkDAKdimyLqqTk1XArEKT2FWVEbQiyOxAgejfgGuqRpkPDVFtgAFjo76LqyQh5EE9JG4bkTfJfIwVnVq7kggvsEldRDjthV/1Kbjhk6k5opE2ygPfzUg3xdharZJkc2pGmRxon0whf/TqG3f03Fr1SBZm/ncj8cT5faqQX5ItHNazNmWolUN8n6i3dLUu8hm4cVE+bZqkFcTbaUiO76J/2pcnlz3VQ2yC1/HcTdubOJ/WzJ+VB62VwuSh4DnEv0uRTa7gf+ZyfjJzpR4XsCvcbwwpqFsaX05ozMgeThQ2pp9iuy4kv+7ybhfkWWdiAg8k2zl+XiidH8LxuL4YqzvDEgeDuLORFmlyC5L7n9RWhuP4cEGBfF6fIYD+AprMKf133dyvdiOq+PVLzhbHn5KaslbuDSZsRMPYTh+yL0N3jWMzbEOjbXu0CZaxc+xICqfYHmMGEV2LHZg+Qyy8F2sP4M41LhDm6AcjeGtkZ+PwRgN8vBnjEh/3dfV2w6chHUxqjVbhFdi6hZPnZqJyKzBQKK8hNXycCjxWYL7cWHs5nbjebyM2sOPij3PPTihlK6l8jCatTxOFFl/aXe8jpvl4e8ZNM/HxDW0PkLDgDysbacJ3oBnk+tr8Y4imz+D9bEfD5e6u97WqamPTB82JsoeXIePZwA0N2nGx+RhdvvHgjxswlr8E5XT8GHckt3TBOlNxnub75rmMAO4Er8nJ8X78GU8crRjy+J/rWZD0wcZh3kbZ5V620V4I7YTvVO0nsvwZnJiGI4lYBprZPKayWJ/shnzyndjBR2KL1uIm2LFnRt9fkaPPBSHB1JfhTfERrrdtTKCHuyeurJOz0Zxd+xPtmBfC/9PcV4sfNqrrO1FpKx0Y2WsN+fixAj3UTwBDCU7r8VP7z+wfwcAoHf6cPTCnfkAAAAASUVORK5CYII=") left center no-repeat
+    padding-left 2.46em
+    font-size 1.1875em // 19px
+    font-family GothamProBold
+    margin-left 2em
+    display inline-block
+    vertical-align top
+
+    &-link
+      font-family GothamProBold
+      font-size .75em // 12px
+      color #ffd800
+      border-bottom .083em dotted #ffd800
+
+  &__map
+    background url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAiCAYAAABBY8kOAAAACXBIWXMAAAsTAAALEwEAmpwYAAABNmlDQ1BQaG90b3Nob3AgSUNDIHByb2ZpbGUAAHjarY6xSsNQFEDPi6LiUCsEcXB4kygotupgxqQtRRCs1SHJ1qShSmkSXl7VfoSjWwcXd7/AyVFwUPwC/0Bx6uAQIYODCJ7p3MPlcsGo2HWnYZRhEGvVbjrS9Xw5+8QMUwDQCbPUbrUOAOIkjvjB5ysC4HnTrjsN/sZ8mCoNTIDtbpSFICpA/0KnGsQYMIN+qkHcAaY6addAPAClXu4vQCnI/Q0oKdfzQXwAZs/1fDDmADPIfQUwdXSpAWpJOlJnvVMtq5ZlSbubBJE8HmU6GmRyPw4TlSaqo6MukP8HwGK+2G46cq1qWXvr/DOu58vc3o8QgFh6LFpBOFTn3yqMnd/n4sZ4GQ5vYXpStN0ruNmAheuirVahvAX34y/Axk/96FpPYgAAACBjSFJNAAB6JQAAgIMAAPn/AACA6AAAUggAARVYAAA6lwAAF2/XWh+QAAADAklEQVR42ryX0UvUQRDHP78z9EUwDgLD8ClYKIgeIiEEQwkEwyjoxVcPREiEQvBBksDQlwQpgkD/giIxCoNQPJAkIZCOhB/c05F4IEiCLx4c28usN7f97ne/K3Dgx+3M7s53dnZ2Zi6w1nIWdA6AMIhb0wHcBwaAC8B1ke8AB8AnYBlj9+KUBNbaWkDtwDNgGGiqY3AZWAKmMbbYCFA/8BZobdBDx8BDjP3sT6QiFo8Dqx7IF2AEuCHuDmQ8InOOWoFVwmC83okGgffKVXkgA2TrnKQHWAQuK1c+wNgPUUAdwE+gTeY2gXvAYV2HGQthkAZWgG6RHgFXXZBo1z1VIPnEIBWwQ9mTF0mb6Ky6o06JLkeZCJAesfiXfCsi88EySjJMGHRqoCF1L+sRdzIJbMgddsg3KLJJDywrOhCdQxrojlr6LuIkMzFOmyEMuj2Z1tGrgYwXytWKKqfNAl3yZZXVviFaxxUddSdAs0y0ACW18LcKkotAUWWO/dMIM/b86Y4waAZOhCthbEtKWUXE2KemBGOfL2vXFb0kqimnxotyknYZO/oekYgdHWigHTXhX+yUs0py4L58/criKW9Pt29oSoW0znWashGKqg0xdtOTPfL2nwZDmzxCl0j7PHAX5o+Bm8JvA/NAFqOKZxj0Amsqm1/C2COd616IIufKLi/64nNdJdq+qeI4j7FP/Fy3IBYgCyf+oWJPKJBj0flXPSoA016SNYkhwsDoJCrVtlCrHjUBX9U9bAK3VdTFva8NFW3bwC2MLdeqsGXJviUVpqMJzjOqQEpARoPUKuU5YE7xs1JG4rqkWcXPYWwuSc8A8BzYVX3A6xigN+pZ7MpekgKVxIXu+AOurng0JHMVtxtbagQIYAt4pfiXQFrxaZFVnoexW7WUpepc8pTqAXzFGjjvPY2GOlVdIdcUf1d+PypZH8au/y+QKw+uednzSsESxmbqKUgKlAZ+RNSqPeCadD+xlEqYYA6BsQj5WNLeL9VAwlyWkC/IlxFZIgrO6o/YnwEA8Pbu9/XXV0IAAAAASUVORK5CYII=") left top no-repeat
+    padding-left 2.46em
+    font-size 1.0626em // 17px
+    font-family GothamProBold
+    display inline-block
+    margin-left 2em
+
+    &-address
+      display block
+      margin-bottom .2em
+
+    &-link
+      font-family GothamProBold
+      font-size .75em // 12px
+      color #ffd800
+      border-bottom .083em dotted #ffd800
+
+
+
+.descriptor
+  width 37em
+  margin 0
+  padding 0
+  background none
+
+  &__heading
+    font-family GothamProLight
+    font-size 3.1875em // 51px
+
+  &__text
+    margin-top 2em
+    line-height 1.6em
+
+
+.capture
+  margin 12em 0 4em
+  width 60em
+  padding 1.875em 2.5em
+  border-radius .3125em
+  border .8125em solid #ffcc00
+
+  &__heading
+    text-align: left;
+    font-family: GothamProMedium;
+    font-size: 1.3125em; // 21px
+    margin-bottom: 1.4em;
+
+  &__inputs
+    display inline-block
+    width 73%
+
+  &__input
+    width: 30%;
+    margin-right: 2%;
+    padding: .625em 1.25em
+
+  &__controls
+    width 25%
+    display inline-block
+
+  &__submit
+    width: 100%
+
+
+@media all and (max-width: 1170px)
+  .s-head
+    &__container-1
+      width 100%
+      padding 2em 2em 4em
+
+    &__container-2
+      width 100%
+      padding 0 2em
+
+  .main-nav
+    display none
+
+
+
+  .descriptor
+    text-align left
+
+
+
+@media all and (max-width: 1080px)
+  .s-head
+    background url("../img/chip/chip-lamb-q40.jpg") left bottom no-repeat #000
+
+
+
+  .capture
+    margin 11em auto 2em
+    width 90%
+
+
+
+
+@media all and (max-width: 915px)
+  .s-head
+    background #333
+
+    &__container
+      &-1
+        padding-top 5em
+      &-2
+        padding 0
+
+  .logo
+    padding 1.2em 0 1.3em 5em
+    margin 0
+    position absolute
+    top 0
+    left 0
+    right 0
+    width 100%
+    background-color #fff
+    color #000
+    background-size 2.5em
+    background-position 2em center
+    font-size 1.1em
+
+  .contacts
+    margin-top 1em
+    position static
+    text-align center
+    width 100%
+    right 2em
+
+    &__map
+      margin 0
+      display: inline-block
+      text-align left
+    &__phone
+      display: inline-block
+      text-align left
+
+  .descriptor
+    text-align center
+    width 100%
+    padding  0 2em
+
+    &__text
+      font-size 1.2em
+
+  .capture
+    margin-top 5em
+    &__inputs
+      display block
+      width 100%
+
+    &__input
+      width 30%
+
+    &__controls
+      width 30%
+
+@media all and (max-width: 740px)
+  .descriptor
+    &__heading
+      font-size 2.3em
+
+  .capture
+    &__inputs
+      width 100%
+      margin-bottom .5em
+
+    &__input
+      width 48%
+      margin-right 0
+
+      &:nth-child(2)
+        left 2%
+        float right
+
+    &__controls
+      width 100%
+
+
+@media all and (max-width: 650px)
+  .logo
+    font-size 1em
+
+  .contacts
+    position static
+    margin 1em auto 0
+    display block
+
+    &__phone
+      display block
+      margin 1em auto 0
+      width 340px
+      padding-left 60px
+
+      &-button
+        padding 1.2em 1em
+        width 13.33em
+
+    &__map
+      display block
+      margin 0 auto
+      width 340px
+      padding-left 60px
+
+      &-button
+        padding 1.2em 1em
+        width 14.285em
+
+  .descriptor
+    &__heading
+      padding 0 1em
+    &__text
+      &-1
+        padding 0 1em
+
+  .capture
+    margin-top 5em
+    width 100%;
+    border-width 0
+    background #007fff
+    border-radius 0
+    margin-bottom 0
+
+    &__input
+      font-size: 1.05em
+      padding .8em .8em .8em 1.25em
+
+    &__submit
+      padding 1em 0
+      font-size: 1.05em
+
+
+@media all and (max-width: 560px)
+  .s-head
+    height auto
+
+  .capture
+    margin-top 3.5em
+
+
+@media all and (max-width: 500px)
+  .s-head__container-1
+    padding 6em 1em 1em
+
+  .contacts
+    margin .2em 0 1.5em
+    text-align center
+
+    &__map
+      display block
+      width 100%
+      padding-top .4em
+      height 3em
+
+      &-address
+        padding-bottom .5em
+
+      &-link
+        display none
+
+    &__phone
+      display block
+      width 100%
+      margin 0
+
+      &-digits
+        display block
+
+      &-button
+        width 18em
+
+  .descriptor
+    &__heading
+      font-size 1.8em
+
+
+@media all and (max-width: 480px)
+  .descriptor
+    &__heading
+      font-size 1.5em
+    &__text
+      &-1
+        font-size 1.1em
+
+  .capture
+    &__input
+      width 100%
+      float none
+      margin-left 0
+
+
+@media all and (max-width: 400px)
+  .capture
+    padding 2em 1.5em
+
+@media all and (max-width: 360px)
+  .s-head__container-2
+    overflow hidden
+
+
+

@@ -1,0 +1,13 @@
+User-agent: *
+Disallow: /constr/css
+Disallow: /constr/font
+Disallow: /constr/js
+Disallow: /constr/meta
+Disallow: /constr/order
+Disallow: /constr/psd
+Disallow: /constr/tpl
+Disallow: /ctrl
+Disallow: /.htaccess
+Disallow: /*PHPSESSID=
+
+Sitemap: http://service.avtolike.ru/sitemap.xml

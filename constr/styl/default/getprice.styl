@@ -1,0 +1,62 @@
+.s-getprice
+  padding: 1.56em 0
+  background: #fff
+
+  &__container
+    position relative
+    width 73.125em
+
+  &__text-1
+    float left
+    width 37%
+    font-family GothamProMedium
+    font-size 1.063em
+    padding-left 5em
+    background url("../img/xenon/label.png") 7px 5px no-repeat
+
+  &__text-2
+    float left
+    padding 0.5em 0 0 2.6em
+    font-family GothamProRegular
+    font-size 0.875em
+
+  &__text-3
+    display none
+    width 50%
+    padding-left 5em
+    background url("../img/xenon/label.png") 7px 5px no-repeat
+
+  &__button-wrap
+    position absolute
+    right 0
+    top 0
+
+  &__button
+    background url("../img/xenon/document.png") 19px 2px no-repeat #007fff
+    font-size 1.063em
+    padding-left 3.75em
+    width 17.2em
+
+
+@media all and (max-width: 1170px)
+  .s-getprice
+    &__container
+      padding 0 2em
+      width 100%
+
+  .s-getprice
+    &__button
+      margin-right 2em
+
+@media all and (max-width: 1050px)
+  .s-getprice
+    &__text-1
+    &__text-2
+      display none
+
+    &__text-3
+      display block
+
+@media all and (max-width: 800px)
+  .s-getprice
+    display none

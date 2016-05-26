@@ -1,0 +1,346 @@
+.s-products
+     background url("../img/default/default-pentasome-right-top-q60.jpg") right bottom no-repeat
+     padding-top 2em
+
+     .crs
+          &__positions
+               text-align center
+
+          &__position
+             display inline-block
+             width 1.6em
+             height 1.6em
+             background-color #007fff
+             border-radius 50%
+             margin 0 .3em
+             cursor pointer
+
+             &--active
+                  width 1.6em
+                  height 1.6em
+                  background-color #ffcc00
+
+     &__container
+          padding 4.0625em 0
+          width 73.125em
+
+     &__heading
+          font-size 1.5em
+          font-family GothamProMedium
+          text-align center
+          margin-bottom 2.208em
+
+
+.product
+     margin-top 0.75em
+     background #f6f6f6
+     width 100%
+     position relative
+     box-shadow 0 0.0625em 0.125em rgba(0,0,0,0.1), 0 0 0.3125em rgba(0,0,0,0.1) inset
+
+     &__badge
+          float left
+          width 10.625em
+          height 10em
+          background url("../img/default/default-iconset-01.png") no-repeat
+
+          &--1
+               background-position -1px -3278px
+               color #fff
+          &--2
+               background-position -1px -3110px
+          &--3
+               background-position -1px -2940px
+               color #fff
+
+          &-image
+               height 5.625em
+               background url("../img/default/default-iconset-01.png") no-repeat
+
+               &--1
+                 background-position 30px -3640px
+               &--2
+                 background-position 30px -3800px
+               &--3
+                 background-position 30px -3475px
+
+          &-text
+            padding-left 1.875em
+            font-family GothamProMedium
+            font-size 0.875em
+            width 7em
+
+     &__box-1
+          width 27em
+          float left
+
+     &__photo-wrap
+          float left
+          width 10.625em
+          height 10em
+
+     &__photo
+          width 10.625em
+          height 9.6em
+          margin 0.2em 0
+
+     &__description
+          padding 1.75em 1.375em 1.75em 11.6em
+
+          &-title
+               font-size 0.875em
+               font-family GothamProMedium
+
+          &-hr
+               border-width 0.0625em
+               height 0.0625em
+               background #1c72c8
+               width 1.25em
+               border-radius 0.125em
+               margin 0.625em 0
+
+          &-item
+               font-family GothamProLight
+               font-size 0.6875em
+               color #7e7e7e
+               line-height 1.7em
+
+          &-attr
+               font-size 1em
+               color #000
+
+     &__box-2
+          width 35.5em
+          height 10em
+          float right
+
+     &__label
+          float left
+          padding-top 3.75em
+          width 7.8125em
+          margin-left 1.5625em
+          text-align center
+
+          &-title
+               font-size 0.6875em
+               font-family GothamProLight
+
+          &-price
+               font-size 0.875em
+               font-family GothamProMedium
+               background #e7e7e7
+               padding 0.625em 1em
+               border-radius 1.25em
+               margin-top 0.625em
+
+     &__button
+          font-size 0.875em
+          font-family GothamProMedium
+          border-radius 1.429em
+          width 14.623em
+          margin 5.8em 1.5625em 0
+
+
+
+@media all and (max-width: 1170px)
+     .s-products
+          &__container
+               width 90%
+
+     .product
+          &__box-2
+               width auto
+
+          &__label
+               padding-top 2em
+
+          &__button-wrap
+               margin-left 1.5em
+
+          &__button
+               margin 1em 0 0 0
+               width 100%
+
+
+@media all and (max-width 1050px)
+  .s-products
+       &__container
+         width 95%
+
+
+@media all and (max-width: 980px)
+  .s-products
+    &__container
+      width 90%
+
+  .product
+    padding-top 2em
+
+    &__badge
+      position absolute
+      width 40%
+      top 0
+      height auto
+      border-bottom-right-radius 0.3em
+
+      &--1
+        background #007fff
+      &--2
+        background #ffdd56
+      &--3
+        background #56b04f
+
+      &-image
+        display none
+
+      &-text
+        padding 0.7em 1.5em
+        width auto
+
+    &__box-1
+      margin-left 0.5em
+
+
+@media all and (max-width: 880px)
+  .product
+    margin-bottom 1.5em
+
+    &__box-2
+      height 12.5em
+
+    &__label
+      margin-bottom .5em
+      padding-top 0
+      float none
+      width 11em
+
+@media all and (max-width: 740px)
+  .product
+     &__description-attr
+          font-size 1.1em
+
+     &__box-2
+          float left
+          width 100%
+          height auto
+          margin 1em 0 2.2em
+
+     &__label
+          float left
+          text-align left
+
+     &__label-title
+          font-size 0.8em
+          padding-left 1em
+
+     &__button
+          margin 1.55em 2em 0
+          width 13em
+
+
+@media all and (max-width: 720px)
+  .product
+     &__badge
+          width 60%
+
+     &__label
+          width 15.25em
+
+     &__button
+          margin 1em 0 0 0
+          font-size 1.1em
+          width 29.2em
+
+
+
+@media all and (max-width: 640px)
+     .s-products
+          &__container
+               width 100%
+
+     .crs
+          &__content
+             width 99999px
+          &__item
+             width 100%
+             float left
+             margin 0
+             padding 0 1.5em
+
+     .product
+          &__label
+
+          &__button-wrap
+               margin 0
+               padding 0 1.5em
+
+          &__button
+               margin 1.5em 0 0
+               width 100%
+
+
+
+@media all and (max-width: 500px)
+  .s-products
+     &__container
+       width 90%
+
+  .product
+    &__badge
+      width 80%
+
+    &__photo-wrap
+      float none
+      margin 0 auto
+
+    &__description
+      padding 0.5em 0 0 11%
+
+    &__button
+      width 80%
+
+    &__description
+      padding: 0.5em 0 0 15%
+
+    &__label
+      padding 0 1.5em 1em
+      display inline-block
+      float none
+      width 80%
+
+    &__box
+      &-1
+        margin 0
+        width 100%
+      &-2
+        text-align center
+
+     &__photo
+       float none
+       text-align center
+       width 100%
+
+     &__button-wrap
+       text-align center
+       padding 0
+
+
+
+
+@media all and (max-width: 380px)
+  .s-products
+    &__heading
+      font-size 1.2em
+
+  .product
+    &__label
+      width 90%
+
+  .crs
+    &__item
+      padding 0
+
+
+
+
+

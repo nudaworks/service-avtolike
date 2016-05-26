@@ -1,0 +1,80 @@
+.s-faq
+  background:
+          url(../img/chip/chip-bg-01-left-q40.jpg) left bottom no-repeat,
+          url(../img/chip/chip-bg-01-right-q40.jpg) right bottom no-repeat;
+
+  &__container
+    padding 4.375em 0
+
+  &__heading
+    font-family GothamProLight
+    font-size 2.75em // 44px
+    text-align center
+
+  &__text
+    padding 2em 0 2.5em
+    font-size 1.25em // 20px
+    text-align center
+    line-height 1.5em
+
+
+.accordion
+  &__item
+    margin-bottom .8em
+    background rgba(244, 244, 244, 0.8)
+    border-radius .15em
+
+  &__heading
+    cursor pointer
+    position relative
+    padding 1.1em 4em 1.1em 2em
+
+  &__toggle
+    position absolute
+    top 0
+    right 0
+    margin .75em 1.25em
+    width 1.75em
+    height 1.75em
+    color #8b8b8b
+    background url(../img/default/default-iconset-01.png) 5px -5987px no-repeat #e8e8e8
+    border-radius 1.05em
+
+  &__item--active &__toggle
+    transform rotate(180deg)
+
+  &__content
+    padding 0 4.375em 1.875em 1.875em
+    display none
+
+  &__item--active &__content
+    display block
+
+
+
+@media all and (max-width: 1170px)
+  .s-faq
+    background url(../img/chip/chip-bg-01-left-q40.jpg) left bottom no-repeat
+
+    &__container
+      padding 4.375em 2.5em
+      width 100%
+
+@media all and (max-width: 800px)
+  .s-faq
+    &__heading
+      font-size 2em
+
+@media all and (max-width: 480px)
+  .s-faq
+    &__container
+      padding 4.375em 0
+    &__heading
+      padding 0 1.5em
+    &__text
+      font-size 1.1em
+      padding 2em 1.5em 2.5em
+
+  .accordion
+    &__item
+      border-radius 0

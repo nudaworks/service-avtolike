@@ -1,0 +1,21 @@
+<?php
+$content = array (
+    $s . 'head',
+    $d . 'getprice',
+    $s . 'results',
+    $d . 'advantages',
+    $s . 'install',
+    $s . 'products',
+    $d . 'service',
+    //$d . 'service_plus',
+    $d . 'equip',
+    $d . 'tune',
+    $d . 'lab',
+    //$d . 'consult',
+    //$d . 'works',
+    //$s . 'stages',
+    $d . 'wifi',
+    $d . 'map',
+    $s . 'testimonials',
+    $d . 'partners',
+);

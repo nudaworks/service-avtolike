@@ -1,0 +1,56 @@
+produce_img_positions(len, size)
+  for i in (1..len)
+    y = -(i - 1) * size
+    &--{i}
+      background-position 0 (y)px
+
+.s-tune
+  padding 3em 0
+
+  &__heading
+    text-align center
+    font-family GothamProLight
+    font-size 2.75em // 44px
+    color #000
+
+  &__subheading
+    text-align center
+    padding 1em 0
+    font-family GothamProLight
+    font-size 1.25em // 20px
+    color #000
+
+.tune-cars
+  padding 2em 0
+  text-align center
+
+  &__item
+    display inline-block
+    width 100px
+    height 100px
+    background url("../img/default/default-auto-brands-grid-q50.jpg") no-repeat
+    produce_img_positions(40, 100)
+
+@media all and (max-width: 1170px)
+  .s-tune
+    &__container
+      width 100%
+
+@media all and (max-width: 820px)
+  .s-tune
+    &__heading
+      font-size 2em
+
+@media all and (max-width: 650px)
+  .s-tune
+    background #eee
+    padding 2em
+
+    &__heading
+      display none
+
+    &__subheading
+      font-weight 700
+
+  .tune-cars
+      display none

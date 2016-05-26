@@ -1,0 +1,115 @@
+.s-testimonials
+  &__container
+    margin 0 auto
+    width 73.125em
+
+  &__heading
+    padding 1.5em 1em
+    font-family GothamProLight
+    font-size 2.75em // 44px
+    text-align center
+    color #000
+
+  .crs
+    &__wrap
+      margin 0 auto
+
+    &__item
+      position relative
+      padding 0 0 3.75em 9em
+      min-height 10em
+
+      &-photo
+        position absolute
+        left 0
+        background url("../img/default/default-clients-q60.png") no-repeat
+        border .8em solid #ededed
+        border-radius 50%
+        width 7.7em
+        height 7.7em
+
+        &--1
+          background-position -100px 0
+        &--2
+          background-position -100px -100px
+        &--3
+          background-position -100px -200px
+        &--4
+          background-position -100px -300px
+        &--5
+          background-position -100px -400px
+
+      &-description
+        padding 0 1em
+
+      &-title
+        padding .277em 0 1.25em
+        font-family GothamProBold
+        font-size 1.125em // 18px
+
+      &-review
+        font-family GothamProLight
+        font-size 1em
+        text-align justify
+
+    &__positions
+      text-align center
+      display none
+      padding-bottom 3em
+
+    &__position
+      display inline-block
+      width 1.6em
+      height 1.6em
+      background-color #007fff
+      border-radius 50%
+      margin 0 .3em
+      cursor pointer
+
+      &--active
+        background-color #ffcc00
+
+
+@media all and (max-width: 1170px)
+  .s-testimonials
+    &__container
+      width 100%
+      padding 0 1.5em
+
+
+@media all and (max-width: 640px)
+  .s-testimonials
+    &__container
+      width 100%
+      padding 0
+
+    &__heading
+      font-size 2.2em
+
+    .crs
+      &__wrap
+        margin 0 auto
+        overflow hidden
+
+      &__content
+        width 625em
+
+      &__item
+        text-align center
+        padding 0 1em 0
+        margin .5em 0 2.5em
+        float left
+
+        &-photo
+          position: static
+          display inline-block
+          margin-bottom 1.5em
+
+      &__positions
+        display block
+
+
+@media all and (max-width: 340px)
+  .s-testimonials
+    &__heading
+      font-size 1.8em

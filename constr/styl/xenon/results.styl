@@ -1,0 +1,116 @@
+.s-results
+  display block
+  background: url("../img/xenon/xenon-results-bg-w1920-q50.jpg") repeat scroll center bottom / cover;
+
+  &__container
+    padding 4em 0 5em
+    margin 0 auto
+    width 73.125em
+
+  &__blindfold
+    background rgba(0,0,0, .5)
+
+  &__heading
+    font-size 2.75em // 44px
+    font-family GothamProLight
+    padding 1em 2em 1.35em
+    text-align center
+    color #fff
+
+  .crs
+    &__wrap
+      overflow hidden
+
+    &__content
+      width: 10000px
+
+    &__item
+      width 25em
+      padding 0 .75em
+      float left
+
+    &__positions
+      margin-top 1.875em
+      text-align center
+
+    &__position
+      display inline-block
+      width 1.5em
+      height 1.5em
+      border .25em solid #4a687e
+      background #4a687e
+      border-radius 50%
+      margin 0 .25em
+
+      &--active
+        border-color #007fff
+        background none
+
+  .result
+    font-family: GothamProMedium;
+
+    &__before
+      padding 1.25em 1.55em 1.875em
+      min-height: 8.5em
+      background-color: rgba(0, 0, 0, 0.3);
+
+      &-title
+        font-size .75em
+        text-transform: uppercase
+        margin-bottom .875em
+        letter-spacing .125em
+        color #888
+
+      &-description
+        color #fff
+        font-size 1.0625em
+
+    &__after
+      padding 1.25em 1.55em 1.875em
+      background #007fff
+      min-height: 8.5em
+
+      &-title
+        font-size .75em // 12px
+        text-transform: uppercase;
+        margin-bottom .875em
+        letter-spacing .125em
+
+      &-description
+        color #fff
+        font-size 1.0625em
+
+
+
+
+@media all and (max-width: 1170px)
+  .s-results
+    &__container
+      width 100%
+
+    .crs
+      &__wrap
+        width 100%
+
+@media all and (max-width: 800px)
+  .s-results
+    &__heading
+      padding 1em
+      font-size 2.5em
+
+
+@media all and (max-width: 600px)
+  .s-results
+    &__heading
+      font-size 1.8em
+    .crs
+      &__item
+        padding: 0 2em
+
+@media all and (max-width: 440px)
+  .s-results
+    &__heading
+      font-size 1.8em
+    .crs
+      &__item
+        padding: 0 .75em

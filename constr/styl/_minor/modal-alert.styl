@@ -1,0 +1,38 @@
+.modal-alert
+  position fixed
+  height 100%
+  width 100%
+  z-index 100
+  background rgba(55,55,55,0.8)
+
+  &__window
+    width 34em
+    padding 3em
+    margin 8em auto
+    background #fff
+    border-top .25em solid #007fff
+    border-radius .125em
+
+  &__message
+    font-size 1.125em // 18px
+    min-height: 4em;
+    padding-bottom: 3em
+
+  &__controls
+    text-align right
+
+  &__confirm
+    width 10em
+
+
+@media all and (max-width: 620px)
+  .modal-alert
+    &__window
+      width 100%
+      margin 0
+
+
+@media all and (max-width: 420px)
+  .modal-alert
+    &__window
+      padding 3em 1.5em

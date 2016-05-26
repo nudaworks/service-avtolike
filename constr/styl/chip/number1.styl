@@ -1,0 +1,89 @@
+.s-number1
+  background url("../img/chip/chip-number1-bg-v2-q50.jpg") center top no-repeat #000
+  background-size: cover
+  color #fff
+
+  &__container
+    width 73.125em
+    margin 0 auto
+
+  &__heading
+    padding 1.47em 0
+    font-size 3.1875em // 51px
+
+    &-p1
+    &-p2
+      display block
+      font-family GothamProLight
+
+.number1
+  &__item
+    display inline-block
+    position relative
+    padding .5em 5em 0 9em
+    vertical-align middle
+    width 32%
+    height 170px
+    background url(../img/default/default-iconset-01.png) 0px -5800px no-repeat
+
+  &__icon
+    position absolute
+    top 0
+    left 0
+    width 5em
+    height 5em
+    background url("../img/default/default-iconset-02.png") no-repeat
+
+    &--1
+      background-position 30px 20px
+    &--2
+      background-position -130px 10px
+    &--3
+      background-position -275px 10px
+    &--4
+      background-position 27px -134px
+    &--5
+      background-position -130px -135px
+    &--6
+      background-position -275px -125px
+    &--7
+      background-position 27px -285px
+    &--8
+      background-position -120px -285px
+    &--9
+      background-position -275px -285px
+
+@media all and (max-width: 1170px)
+  .s-number1
+    &__container
+      width 100%
+      padding 2em
+
+  .number1
+    &__item
+      width 49%
+
+
+@media all and (max-width: 820px)
+  .s-number1
+    &__heading
+      font-size 2em
+
+  .number1
+    counter-reset list
+
+    &__item
+      width: 100%
+      background none
+      padding 0 0 0 2em
+      margin 0
+      height initial
+
+    &__icon
+      width: 0
+
+      &:before
+        counter-increment list
+        content counter(list)'.'
+
+

@@ -1,0 +1,94 @@
+*
+  font-family: GothamProRegular
+  padding 0
+  margin 0
+  border none
+  box-sizing border-box
+  list-style-type none
+  text-decoration none
+  outline none
+  transition-duration .5s
+
+hr
+  margin 1em 0
+  width 2em
+  height .0125em
+  border-color #007fff
+  color #007fff
+  background #007fff
+
+p
+  font-size: .875em; // 14px
+
+button
+  font-size .9375em // 15px
+  border-radius .3em
+  text-align center
+  padding 0.625em
+  font-family GothamProBold
+  cursor pointer
+
+  &.yellow
+    background-color #ffcc00
+    &:hover
+      background-color #E3B914
+
+  &.blue
+    background-color #007fff
+    color #fff
+    &:hover
+      background-color #227EDA
+
+  &.black
+    background-color #000
+    color #fff
+
+  &.white
+    background-color #fff
+    color #63676c
+
+input
+  font-family GothamProMedium
+  font-size .9375em // 15px
+  padding .625em 0
+  border-radius .3em
+  margin-bottom .45em
+  border .0125em solid #e8e8e8
+
+  &[type=text]
+    &.phone
+      background url("../img/xenon/small-icons.png") 18px -76px no-repeat #fff
+    &.name
+      background url("../img/xenon/small-icons.png") 18px 14px no-repeat #fff
+
+
+section
+  width 100%
+  min-width: 20em;
+
+.container
+  margin 0 auto
+  width 73.125em
+  position relative
+
+
+.clearfix
+  &:after
+    display table
+    content ''
+    clear both
+
+@keyframes emerge
+  from
+    opacity 0
+  to
+    opacity 1
+
+@keyframes vanish
+  from
+    opacity 1
+  to
+    opacity 0
+
+.m-hidden
+  display none

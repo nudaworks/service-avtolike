@@ -1,0 +1,125 @@
+.modal-form
+  position fixed
+  height 100%
+  width 100%
+  background rgba(55,55,55,0.6)
+  z-index 100
+  opacity 0
+  animation emerge .8s 1
+  animation-fill-mode forwards
+
+  &__window
+    position relative
+    margin 6.25em auto
+    width 45em
+    padding 3.75em
+    background #fff
+    border-top .25em solid #007fff
+    border-radius .125em
+
+  &__close
+    position absolute
+    top 0
+    right 0;
+    margin 12px 20px 0 0
+    cursor pointer
+    font-size 25px
+    color #aaa
+
+    &:hover
+      color: #000
+
+  &__heading
+    font-size 1.875em // 30px
+
+  &__form
+    margin 2em 0
+    background #fff
+
+  &__input
+    font-size .9375em // 15px
+    padding .8em .33em .8em 1.2em
+    width 190px
+    border 1px solid #ddd
+    border-radius 4px
+    margin-right 8px
+
+    &--invalid
+      border-color Salmon
+
+  &.with-textarea &__input
+    display block
+    width 15em
+
+
+
+  &.with-textarea [name='description']
+    display block
+    width 100%
+    min-width 100%
+    max-width 100%
+    min-height 8em
+    max-height 10em
+    margin-bottom .5em
+
+  &__submit
+    font-size .9375em // 15px
+    padding .75em .33em
+    width 11.33em
+
+  &.with-textarea &__submit
+    display block
+    width 15em
+
+  &__error
+    color Salmon
+
+@media all and (max-width: 800px)
+  .modal-form
+    &__window
+      width 32em
+    &__input
+      display inline-block
+      width 48%
+      margin-right: 2%
+    &__submit
+      margin-top: 1.5em
+      display block
+      width 98%
+
+@media all and (max-width: 520px)
+  .modal-form
+    &__window
+      margin-top 0
+      width 100%
+
+    &__heading
+      font-size 1.6em
+
+    &__input
+      width 80%
+
+    &__submit
+      width 80%
+      font-size 1.05em
+      padding .85em .33em
+
+@media all and (max-width: 420px)
+  .modal-form
+    &__window
+      padding 3.75em 2em
+    &__input
+    &__submit
+      width 100%
+
+    &.with-textarea
+      &__input
+      &__submit
+        width 100%
+
+@keyframes emerge
+  from
+    opacity 0
+  to
+    opacity 1
+

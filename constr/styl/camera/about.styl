@@ -1,0 +1,81 @@
+.s-about
+  background url(../img/camera/camera-about-bg-q50.jpg) right bottom  no-repeat
+  background-size cover
+  border-top .0125em #ddd solid
+
+  &__blindfold
+    height 100%
+    background rgba(255,255,255, .85)
+
+  &__container
+    padding 0 28em 4em 0
+
+  &__heading
+    padding 90px 0 40px
+    font-family GothamProLight
+    font-size 51px
+    width 10em
+
+  &__description
+    font-size 17px
+    text-align justify
+    line-height 1.3em
+
+  &__list
+    padding-bottom 3em
+
+  &__item
+    display inline-block
+    vertical-align top
+    margin-top 70px
+    padding-top 120px
+    width 200px
+    font-family GothamProlight
+    font-size 1em
+    background url(../img/default/default-iconset-01.png) 0 -3930px no-repeat
+
+  &__item:nth-child(n+1)
+    margin-right 35px
+
+  &__summary
+    font-size 1em
+    text-align justify
+
+
+
+@media all and (max-width: 1170px)
+  .s-about
+    &__container
+      width 100%
+      padding 0 2em 6em 2em
+
+
+@media all and (max-width: 800px)
+  .s-about
+    &__heading
+      font-size 2.5em
+
+    &__list
+      margin-top 2em
+
+    &__item
+      width 100%
+      padding .5em 0 .5em 3em
+      margin .5em 0
+      display block
+      background url(blue_arrow_base64) left center no-repeat
+      background-size 1.8em
+
+
+@media all and (max-width: 500px)
+  .s-about
+    background-image none
+
+    &__heading
+      font-size 2em
+
+
+@media all and (max-width: 380px)
+  .s-about
+    &__heading
+      font-size 1.8em

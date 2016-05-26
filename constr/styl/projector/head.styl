@@ -1,0 +1,333 @@
+.s-head
+  position: relative
+  height 52em
+  color #fff
+  background #222 url("../img/projector/projector-head-bg-v3-q40.jpg") center top no-repeat
+  background-attachment fixed
+  background-size cover
+  overflow hidden
+
+  &__container-1
+    padding 3.25em 0 5em
+
+  &__heading
+    font-family GothamProLight
+    font-size 3.1875em // 51px
+    text-align center
+
+.logo
+  display: inline-block
+  width: 11em
+  background url(logo_lightblue_base64) center top no-repeat
+  background-size 50%
+  padding-top 60px
+  margin-top -10px
+  font-size 12px
+  color #c8c8c8
+  text-align center
+
+.main-nav
+  display inline-block
+  vertical-align top
+  width 37.5em
+  padding-left 1.875em
+
+  &__item
+    font-size 14px // 14px
+    font-family GothamProMedium
+    padding-left 20px
+    display inline-block
+    vertical-align top
+    background url("../img/xenon/list-dot.png") 5px 5px no-repeat
+    width 20em
+    text-decoration-color #eee
+    margin-bottom 8px
+
+  &__anchor
+    border-bottom 1px solid #7f7f7f
+    font-family GothamProMedium
+    color #fff
+
+.contacts
+  display inline-block
+  position absolute
+  right 0
+  top 3em
+  text-align center
+
+
+  &__phone
+    font-size 1.1875em // 19px
+    font-family GothamProBold
+    width 10.526em
+    margin-left 1em
+    display inline-block
+
+
+    &-button
+      margin-top 14px
+      width 13.33em
+      font-size .789em // 15px
+
+
+  &__map
+    font-size 1.0626em // 17px
+    font-family GothamProBold
+    width 11.76em
+    display inline-block
+
+
+    &-address
+      display block
+      margin-bottom .2em
+
+    &-button
+      margin-top 14px
+      width 14.285em
+      font-size .882em // 14px
+
+
+
+
+
+
+.descriptor
+  margin-top 15em
+  height 10em
+  width 30em
+  padding-left 12em
+  background url(dealer_guarantee_base64) left center no-repeat
+
+  &__text
+    font-size 1.5em /* 24px */
+    padding-bottom .7em
+
+  &__guarantee
+    font-family GothamProLight
+    font-size 1.0625em
+
+
+
+
+
+
+.hurryup
+  position absolute
+  right 0
+  top 10em
+  width 20em
+
+
+.countdown
+  padding 1.25em .9375em .9375em 4.75em
+  background url("../img/default/default-iconset-01.png") 30px -215px no-repeat #ffcc00
+
+  &__item
+    display inline-block
+    width 3.2em
+    text-align center
+    color #000
+
+  &__digit
+    font-family GothamProMedium
+    font-size 1.8125em // 29px
+
+  &__label
+    font-size .75em // 12px
+
+
+
+
+.form
+  padding 25px 30px
+  background: #f3f3f3
+  color: #000
+
+  &__heading
+    text-align left
+    font-size 21px
+    margin-bottom 30px
+
+
+  &__input
+    width 100%
+    margin-right 12px
+    padding 1em 1.5em
+
+  &__submit
+    margin-top: 4px
+    padding: 13px 0
+    width: 100%
+    font-size: 17px
+
+
+@media all and (max-width: 1170px)
+  .s-head__container-1
+    width 100%
+    padding 2em 2em 4em
+
+  .s-head__container-2
+    width 100%
+    padding 0 2em
+
+  .main-nav
+    display none
+
+  .contacts
+    right 2em
+
+  .descriptor__research
+    margin-left 0
+
+  .hurryup
+    right 2em
+
+  .logo
+    margin-top .8em
+
+
+@media all and (max-width: 1100px)
+  .s-head__container-2
+    position static
+
+  .descriptor
+    margin 1.5em 0 0 0
+    padding 0
+    width auto
+    text-align center
+    background none
+
+  .descriptor__research
+    position absolute
+    text-align right
+    bottom 16em
+    right -1em
+    width 34em
+    padding-right 3em
+    background-color rgba(0,0,0,.3)
+
+  .hurryup
+    top auto
+    left 2em
+    bottom 0em
+
+@media all and (max-width: 900px)
+  .s-head__heading
+    font-size 2.5em
+
+
+@media all and (max-width: 700px)
+  .descriptor__guarantee
+    display none
+
+
+@media all and (max-width: 650px)
+  .s-head
+    &__container
+      &-1
+        padding-top 5em
+
+
+  .logo
+    padding 1.2em 0 1.3em 5em
+    margin 0
+    position absolute
+    top 0
+    left 0
+    right 0
+    width 100%
+    background-color #fff
+    color #000
+    background-size 2.5em
+    background-position 2em center
+    background-image url(logo_black_base64)
+    font-size 1.1em
+
+
+
+  .contacts
+    position static
+    margin 1em auto 0
+    display block
+
+    &__phone
+      &-button
+        padding .64em 1em
+        width 13.33em
+
+    &__onmap
+      &-button
+        padding 1.2em 1em
+        width 14.285em
+
+  .descriptor
+    height: auto
+    padding-bottom 3em
+
+@media all and (max-width: 560px)
+  .s-head
+    height auto
+    background-image none
+
+  .hurryup
+    padding 2em 0
+    position static
+    width 100%
+    margin 0
+
+
+@media all and (max-width: 500px)
+  .s-head
+    &__container
+      &-1
+        padding 6em 1em 1em
+      &-2
+        padding 0 1em
+
+    &__heading
+      font-size 2em
+
+  .contacts
+    margin-bottom 1.5em
+
+    &__map
+      padding .3em 0
+      margin 0
+      width 100%
+      text-align center
+
+      &-address
+        display block
+
+      &-link
+        display none
+
+    &__phone
+      padding .3em 0
+      margin 0
+      width 100%
+      text-align right
+
+      &-digits
+        display block
+
+      &-button
+        display none
+
+  .descriptor
+    &__text
+      font-size 1.3em
+
+
+
+@media all and (max-width: 360px)
+  .s-head__container-2
+    overflow hidden
+
+  .hurryup
+    width 112%
+    padding 2em 0 0
+    margin 0 -1em
+    border-bottom .125em solid #ccc
+
+

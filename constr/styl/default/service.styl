@@ -1,0 +1,206 @@
+.s-service 
+  background:
+          url(../img/default/default-pentasome-left-top-q60.jpg) left bottom no-repeat,
+          url(../img/default/default-pentasome-right-bottom-q60.jpg) right top no-repeat #e8e8e8;
+
+  &__heading
+    font-family GothamProLight
+    font-size 4.5em // 72px
+    padding 1.42em 0 1em
+
+.service-card
+  width 24.3%
+  min-height 31em
+  margin-right .5em
+  margin-bottom .5em
+  float left
+
+  &__front
+    padding 28px
+    background #fff
+
+    &-heading
+      font-weight 700
+      padding 0 0 20px
+      font-size 1.0625em
+      min-height 4em
+      font-family GothamProRegular
+
+    &-title
+      font-size .875em // 14px
+      min-height 3em
+
+
+    &-image
+      margin 15px auto
+      height 160px
+      max-width 220px
+      background url(../img/xenon/service-icons-q40.jpg) no-repeat
+
+      &--1
+        background-position -10px -15px
+      &--2
+        background-position -240px -15px
+      &--3
+        background-position -470px -15px
+      &--4
+        background-position -700px -15px
+      &--5
+        background-position -10px -215px
+      &--6
+        background-position -240px -215px
+      &--7
+        background-position -470px -215px
+      &--8
+        background-position -700px -215px
+      &--9
+        background-position -10px -415px
+      &--10
+        background-position -240px -415px
+      &--11
+        background-position -470px -415px
+      &--12
+        background-position -700px -415px
+
+    &-button-wrap
+      padding-top 20px
+
+    &-description
+      font-size .875em // 14px
+
+    &-button
+      width 100%
+
+  &__back
+    height 100%
+    padding 4em 2em
+    background natural_blue
+
+    &-close
+      margin 0 auto
+      width 3em
+      height 3em
+      border 1px solid #fff
+      border-radius 50%
+      background url(close_icon_slim_base64) center center no-repeat
+      background-size 70%
+      cursor pointer
+
+    &-heading
+      font-size 1.1em
+      padding 2em 0
+      font-weight 700
+      color #fff
+
+    &-input
+      padding-left 1em
+      width 100%
+
+    &-submit
+      margin-top 1em
+      width 100%
+
+  .crs
+    &__positions
+      display none
+      padding 1.5em 0
+
+      &-wrap
+        margin 0 auto
+
+      &-content
+        width 9999px
+
+    &__position
+      display inline-block
+      width 1.6em
+      height 1.6em
+      background-color #007fff
+      border-radius 50%
+      margin 0 .3em
+      cursor pointer
+      opacity 1
+
+      &--active
+        width 1.6em
+        height 1.6em
+        background-color #ffcc00
+
+      &--outscoped
+        animation vanish .5s
+        animation-fill-mode forwards
+
+.show-more
+  display none
+
+@media all and (max-width: 1170px)
+  .s-service
+    &__container
+      width 100%
+      padding 0 .6em
+
+  .service-card
+    width 32%
+
+@media all and (max-width: 840px)
+  .s-service
+    &__heading
+      font-size 3em
+
+  .service-card
+    width 48%
+
+@media all and (max-width: 600px)
+  .s-service
+    &__container
+      padding 1em 3.5em
+    &__heading
+      font-size 2.5em
+
+  .service-card
+    width 100%
+    margin 0
+    padding .5em
+
+
+  .crs
+    &__wrap
+      overflow hidden
+    &__content
+      width 9999px
+
+    &__positions
+      display block
+      padding 1.5em 0
+
+      &-wrap
+        margin 0 auto
+
+      &-content
+        width 9999px
+
+    &__position
+      display inline-block
+      width 1.6em
+      height 1.6em
+      background-color #007fff
+      border-radius 50%
+      margin 0 .3em
+      cursor pointer
+      opacity 1
+
+      &--active
+        width 1.6em
+        height 1.6em
+        background-color #ffcc00
+
+      &--outscoped
+        animation vanish .5s
+        animation-fill-mode forwards
+
+@media all and (max-width: 400px)
+  .s-service
+    &__container
+      padding 1em 1.5em
+    &__heading
+      font-size 1.8em
