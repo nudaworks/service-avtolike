@@ -2228,19 +2228,19 @@ section {
   height: 7.7em;
 }
 .s-testimonials .crs__item-photo--1 {
-  background-position: -100px 0;
+  background-position: 0 0;
 }
 .s-testimonials .crs__item-photo--2 {
-  background-position: -100px -100px;
+  background-position: 0 -100px;
 }
 .s-testimonials .crs__item-photo--3 {
-  background-position: -100px -200px;
+  background-position: 0 -200px;
 }
 .s-testimonials .crs__item-photo--4 {
-  background-position: -100px -300px;
+  background-position: 0 -300px;
 }
 .s-testimonials .crs__item-photo--5 {
-  background-position: -100px -400px;
+  background-position: 0 -400px;
 }
 .s-testimonials .crs__item-description {
   padding: 0 1em;
@@ -3574,19 +3574,19 @@ section {
   height: 7.7em;
 }
 .s-testimonials .crs__item-photo--1 {
-  background-position: -100px 0;
+  background-position: -600px 0;
 }
 .s-testimonials .crs__item-photo--2 {
-  background-position: -100px -100px;
+  background-position: -600px -100px;
 }
 .s-testimonials .crs__item-photo--3 {
-  background-position: -100px -200px;
+  background-position: -600px -200px;
 }
 .s-testimonials .crs__item-photo--4 {
-  background-position: -100px -300px;
+  background-position: -600px -300px;
 }
 .s-testimonials .crs__item-photo--5 {
-  background-position: -100px -400px;
+  background-position: -600px -400px;
 }
 .s-testimonials .crs__item-description {
   padding: 0 1em;
